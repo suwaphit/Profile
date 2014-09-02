@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Resume</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit">EditProfile</string>
+    <string name="images">ViewImages</string>
+    <string name="profile">Profile</string>
+    <string name="name">Name</string>
+    <string name="nick">Nickname</string>
+    <string name="code">Code</string>
+    <string name="sub">Sub</string>
+    <string name="tel">Tel</string>
+    <string name="email">Email</string>
+    <string name="buu">Buu</string>
+
+</resources>
