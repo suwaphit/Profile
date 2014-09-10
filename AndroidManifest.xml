@@ -24,6 +24,7 @@
         </activity>
         <activity android:name="Profile"></activity>
         <activity android:name="Fi"></activity>
+        <activity android:name="Edit"></activity>
     </application>
 
 </manifest>
