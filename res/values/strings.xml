@@ -14,5 +14,12 @@
     <string name="tel">Tel</string>
     <string name="email">Email</string>
     <string name="buu">Buu</string>
+    <string name="name1">NAME1</string>
+    <string name="nickname1">NICKNAME1</string>
+    <string name="code1">CODE1</string>
+    <string name="sub1">SUB1</string>
+    <string name="tel1">TEL1</string>
+    <string name="edit1">EDIT1</string>
+    <string name="buu1">BUU1</string>
 
 </resources>

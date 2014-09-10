@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 
 public class MainActivity extends Activity implements OnClickListener {
-	private TextView tx1,a1,a2,a3,a4,a5,a6,a7;
+	private TextView tx1,a1,a2,a3,a4,a5,a6,a7,c1,c2,c3,c4,c5,c6,c7;
 	private Button b1,b2;
 	private string p1,p2,p3,p4,p5,p6,p7;
 
@@ -37,11 +37,27 @@ public class MainActivity extends Activity implements OnClickListener {
 		a6 = (TextView) findViewById(R.id.t6);
 		a7 = (TextView) findViewById(R.id.t7);
 		
+		c1 = (TextView) findViewById(R.id.n1);
+		c2 = (TextView) findViewById(R.id.n2);
+		c3 = (TextView) findViewById(R.id.n3);
+		c4 = (TextView) findViewById(R.id.n4);
+		c5 = (TextView) findViewById(R.id.n5);
+		c6 = (TextView) findViewById(R.id.n6);
+		c7 = (TextView) findViewById(R.id.n7);
+		
 		
 		b1 = (Button) findViewById(R.id.ed);
 		b2 = (Button) findViewById(R.id.ima);
 		b1.setOnClickListener(this);
 		b2.setOnClickListener(this);
+		
+		c1.setText("NAME   : ");
+		c2.setText("NICKNAME   : ");
+		c3.setText("CODE   : ");
+		c4.setText("SUB   : ");
+		c5.setText("TEL   : ");
+		c6.setText("E-MAIL   : ");
+		c7.setText("BUU   : ");
 		
 		String p1 = getIntent().getStringExtra("dd1");
 		String p2 = getIntent().getStringExtra("dd2");
@@ -54,13 +70,13 @@ public class MainActivity extends Activity implements OnClickListener {
 		
 		if(tx1!=null){
 			tx1.setText("SUWAPHIT    KETKUN");
-			a1.setText(" Name	: Suwaphit  Ketkun");
-			a2.setText(" Nickname	: Kai");
-			a3.setText(" Student code	: 55410595");
-			a4.setText(" Major	: Information Technology");
-			a5.setText(" Tel	: 088-5283660");
-			a6.setText(" E-mail	: pdan-gai@hotmail.com");
-			a7.setText(" University: Burapha University ");
+			a1.setText(" Suwaphit  Ketkun");
+			a2.setText(" Kai");
+			a3.setText(" 55410595");
+			a4.setText(" Information Technology");
+			a5.setText(" 088-5283660");
+			a6.setText(" pdan-gai@hotmail.com");
+			a7.setText(" Burapha University ");
 		}
 		if(p1!=null){
 			a1.setText(p1);

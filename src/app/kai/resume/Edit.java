@@ -27,12 +27,12 @@ public class Edit extends Activity implements OnClickListener{
 	private void d() {
 		// TODO Auto-generated method stub
 		ttv1 = (TextView) findViewById(R.id.tvt);
-		ttv2 = (TextView) findViewById(R.id.textView1);
-		ttv3 = (TextView) findViewById(R.id.textView2);
-		ttv4 = (TextView) findViewById(R.id.textView3);
-		ttv5 = (TextView) findViewById(R.id.textView4);
-		ttv6 = (TextView) findViewById(R.id.textView5);
-		ttv7 = (TextView) findViewById(R.id.textView6);
+		ttv2 = (TextView) findViewById(R.id.n1);
+		ttv3 = (TextView) findViewById(R.id.n2);
+		ttv4 = (TextView) findViewById(R.id.n3);
+		ttv5 = (TextView) findViewById(R.id.n4);
+		ttv6 = (TextView) findViewById(R.id.n5);
+		ttv7 = (TextView) findViewById(R.id.n6);
 		
 		bbt = (Button) findViewById(R.id.btt);
 		
