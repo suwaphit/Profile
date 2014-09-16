@@ -190,9 +190,9 @@ public final class R {
         public static final int btt=0x7f09001a;
         public static final int ed=0x7f090003;
         public static final int ede=0x7f090013;
-        public static final int editText1=0x7f090015;
-        public static final int editText2=0x7f090016;
-        public static final int editText3=0x7f090018;
+        public static final int edit1=0x7f090015;
+        public static final int edit2=0x7f090016;
+        public static final int edit3=0x7f090018;
         public static final int editText4=0x7f090017;
         public static final int editText5=0x7f09001b;
         public static final int editText6=0x7f090019;
@@ -236,6 +236,7 @@ public final class R {
         public static final int email=0x7f06000b;
         public static final int hello_world=0x7f060001;
         public static final int images=0x7f060004;
+        public static final int insert=0x7f060014;
         public static final int name=0x7f060006;
         public static final int name1=0x7f06000d;
         public static final int nick=0x7f060007;

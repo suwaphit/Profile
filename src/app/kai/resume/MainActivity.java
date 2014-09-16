@@ -3,6 +3,7 @@ package app.kai.resume;
 import android.R.string;
 import android.app.Activity;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.provider.ContactsContract.Profile;
 import android.view.Menu;
@@ -18,11 +19,26 @@ public class MainActivity extends Activity implements OnClickListener {
 	private Button b1,b2;
 	private string p1,p2,p3,p4,p5,p6,p7;
 
+	
+	
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        
+        
+        
+        
         ViewMatching();
+        
+      //  controlinsert dbControlinsert = new controlinsert(this);
+        //dbControlinsert.getWritableDatabase();
+        
+        
+        
+        
     }
 
 	private void ViewMatching() {
@@ -48,6 +64,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		
 		b1 = (Button) findViewById(R.id.ed);
 		b2 = (Button) findViewById(R.id.ima);
+	
 		b1.setOnClickListener(this);
 		b2.setOnClickListener(this);
 		
@@ -89,8 +106,6 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		}
 		
-		
-		
 	}
 
 	@Override
@@ -113,4 +128,5 @@ public class MainActivity extends Activity implements OnClickListener {
 	}	
     
 }
+
 

@@ -22,7 +22,7 @@
         android:text="TextView" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/edit1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/ede"
@@ -31,11 +31,11 @@
         android:ems="10" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edit2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText1"
+        android:layout_alignLeft="@+id/edit1"
+        android:layout_below="@+id/edit1"
         android:layout_marginTop="15dp"
         android:ems="10" />
 
@@ -43,17 +43,17 @@
         android:id="@+id/editText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText3"
-        android:layout_below="@+id/editText3"
+        android:layout_alignLeft="@+id/edit3"
+        android:layout_below="@+id/edit3"
         android:layout_marginTop="16dp"
         android:ems="10" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/edit3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/edit2"
+        android:layout_below="@+id/edit2"
         android:layout_marginTop="16dp"
         android:ems="10" >
 
@@ -92,7 +92,7 @@
         android:id="@+id/n1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignLeft="@+id/edit1"
         android:layout_below="@+id/ede"
         android:text="TextView" />
 
@@ -100,16 +100,16 @@
         android:id="@+id/n2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_below="@+id/editText1"
+        android:layout_alignLeft="@+id/edit2"
+        android:layout_below="@+id/edit1"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/n3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText3"
-        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/edit3"
+        android:layout_below="@+id/edit2"
         android:text="TextView" />
 
     <TextView
@@ -117,7 +117,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editText4"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/edit3"
         android:text="TextView" />
 
     <TextView

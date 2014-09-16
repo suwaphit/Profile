@@ -1,6 +1,7 @@
 package app.kai.resume;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,11 +9,13 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Edit extends Activity implements OnClickListener{
 	 TextView ttv1,ttv2,ttv3,ttv4,ttv5,ttv6,ttv7;
 	 Button bbt;
 	 EditText ett,ett1,ett2,ett3,ett4,ett5,ett6;
+	
 	
 	
 	@Override
@@ -38,9 +41,9 @@ public class Edit extends Activity implements OnClickListener{
 		
 		
 		ett = (EditText) findViewById(R.id.ede);
-		ett1 = (EditText) findViewById(R.id.editText1);
-		ett2 = (EditText) findViewById(R.id.editText2);
-		ett3 = (EditText) findViewById(R.id.editText3);
+		ett1 = (EditText) findViewById(R.id.edit1);
+		ett2 = (EditText) findViewById(R.id.edit2);
+		ett3 = (EditText) findViewById(R.id.edit3);
 		ett4 = (EditText) findViewById(R.id.editText4);
 		ett5 = (EditText) findViewById(R.id.editText5);
 		ett6 = (EditText) findViewById(R.id.editText6);
@@ -62,7 +65,7 @@ public class Edit extends Activity implements OnClickListener{
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-		
+		Save();
 		switch (v.getId()) {
 	case R.id.btt:
 		
@@ -97,4 +100,66 @@ public class Edit extends Activity implements OnClickListener{
 		
 	}
 
+	public boolean Save(){
+		final AlertDialog.Builder bb = new AlertDialog.Builder(this);
+		AlertDialog cc = bb.create();
+		
+		if (ett.getText().length()==0) {
+			cc.setMessage("Please input Name");
+			ett.requestFocus();
+			return false;
+			
+		}
+		if (ett1.getText().length()==0) {
+			cc.setMessage("Please input Nickname");
+			ett1.requestFocus();
+			return false;
+			
+		}
+		if (ett2.getText().length()==0) {
+			cc.setMessage("Please input Code");
+			ett2.requestFocus();
+			return false;
+			
+		}
+		if (ett3.getText().length()==0) {
+			cc.setMessage("Please input Sub");
+			ett3.requestFocus();
+			return false;
+			
+		}
+		if (ett4.getText().length()==0) {
+			cc.setMessage("Please input Tel");
+			ett4.requestFocus();
+			return false;
+			
+		}
+		if (ett5.getText().length()==0) {
+			cc.setMessage("Please input Email");
+			ett5.requestFocus();
+			return false;
+			
+		}
+		if (ett6.getText().length()==0) {
+			cc.setMessage("Please input Buu");
+			ett6.requestFocus();
+			return false;
+			
+		}
+		controlinsert dbControlinsert = new controlinsert(this);
+		long savedata = dbControlinsert.insertData(ett.getText().toString(), ett1.getText().toString(), ett2.getText().toString(), ett3.getText().toString(), ett4.getText().toString(), 
+				ett5.getText().toString(), ett6.getText().toString());
+		if (savedata <= 0) {
+			cc.setMessage("Erro ??????????");
+			cc.show();
+			return false;
+			
+		}
+		Toast.makeText(getApplicationContext(), "Add Data Successfully", Toast.LENGTH_SHORT).show();
+		return true;
+		
+	}
+	
+	
+	
 }
